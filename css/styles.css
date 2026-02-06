@@ -1,7 +1,9 @@
 /* CSS GOES HERE */
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif !important;
 }
+
+/*Hey this is for the cards that show off information*/
 body {
     margin: 0;
 	padding: 0;
@@ -10,6 +12,28 @@ body {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+div p {
+    font-size: 18px;
+}
+
+ol li{
+    font-weight: bold;
+}
+
+a[href="about.html"]{
+    color: green;
+    font-weight: bold;
+}
+
+div#wrapper{
+    background: coral;
+}
+
+div.text-wrapper{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 section {
     padding: 60px 20px;
 }
