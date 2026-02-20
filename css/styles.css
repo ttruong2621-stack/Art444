@@ -66,6 +66,11 @@ h1 {
 
 .cta_container{
     width: auto;
+    height:auto;   
+}
+
+.cta_body{
+    width:auto;
     height:auto;
 }
 
