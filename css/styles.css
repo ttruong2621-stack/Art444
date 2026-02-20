@@ -14,15 +14,20 @@ body {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-    font-family: Inter;
+    font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f2f2f2;
 }
 
-div p {
-    font-size: 18px;
-}
 
 ol li{
     font-weight: bold;
+}
+
+header{
+    width:100%;
+    height:auto;
+    background-color: #ffbf91;
+    padding: 40px;
 }
 
 a[href="about.html"]{
@@ -30,26 +35,16 @@ a[href="about.html"]{
     font-weight: bold;
 }
 
-div#wrapper{
-    background: coral;
-}
 
-div.text-wrapper{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+
 
 section {
     padding: 60px 20px;
 }
 section:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #ffe2e2;
 }
-.container {
-    width: 100%;
-    max-width: 960px;
-    text-align: left;
-    margin: 0 auto;
-}
+
 h1 {
     font-size: 3em;
 }
@@ -61,6 +56,6 @@ section .gallery img {
 }
 footer {
     background-color: #000;
-    color: #fff;
+    color: #000000;
     padding: 10px;
 }
