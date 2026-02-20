@@ -46,17 +46,29 @@ section:nth-child(even) {
     width:100%;
     height:auto;
     background-color: #ff8731;
-    padding: 20px;
+    padding: 40px;
 }
 
 ul{
     margin:0;
-    padding:20px;
+    padding:0;
 }
 
 h1 {
     font-size: 3em;
 }
+
+.cta_section{
+    width: 100%;
+    height: auto;
+    padding: 10 20 10 20;
+}
+
+.cta_container{
+    width: auto;
+    height:auto;
+}
+
 section .gallery {
     width: 100%;
 }
