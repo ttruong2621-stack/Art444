@@ -42,6 +42,18 @@ section:nth-child(even) {
     background-color: #ffe2e2;
 }
 
+#semester_container{
+    width:100%;
+    height:auto;
+    background-color: #ff8731;
+    padding: 20px;
+}
+
+ul{
+    margin:0;
+    padding:20px;
+}
+
 h1 {
     font-size: 3em;
 }
