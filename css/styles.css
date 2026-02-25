@@ -114,7 +114,27 @@ section .gallery {
 
 /*---------------------footer section------------------------*/
 footer {
+    width: 100%;
     background-color: #ffbf91;
     color: #000000;
     padding: 10px;
+}
+
+/*---------------------About me Section------------------------*/
+
+section.about_body{
+    width:100%;
+    padding: 20px;
+    height: auto;
+    background-color: #fff1e2;
+
+}
+
+/*---------------------FAQs Section------------------------*/
+section.faqs_section{
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    
 }
