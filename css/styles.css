@@ -68,6 +68,12 @@ section {
     padding: 40px 0px 40px 0px;
 }
 
+ul.semester_list{
+    display:flex;
+    justify-content: space-around;
+    padding: 0px 40px 0px 40px;
+}
+
 ul{
     margin:0;
     padding:0;
@@ -84,7 +90,7 @@ h1 {
     padding: 40px 0px 40px 0px;
 }
 
-.cta_container{
+div.cta_container{
     width: auto;
     height:auto;   
 }
