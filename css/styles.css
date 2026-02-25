@@ -39,7 +39,7 @@ section {
     padding: 60px 20px;
 }
 .semester:nth-child(even) {
-    background-color: #ffe2e2;
+    background-color: #fff1e2;
 }
 
 #semester_container{
@@ -75,10 +75,13 @@ h1 {
 }
 
 
-.semester{
+section.semester{
     width: 100%;
     height: auto;
-    padding:20px;
+    padding:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .semester_article{
@@ -93,11 +96,13 @@ h1 {
 
 section .gallery {
     width: 100%;
+    height: auto;
+    padding: 40px;
 }
-section .gallery img {
-    width: 32%;
+.semester_image{
+    width: 260px;
+    height: 310px;
 }
-
 
 footer {
     background-color: #ffbf91;
