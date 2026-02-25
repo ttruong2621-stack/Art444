@@ -75,6 +75,7 @@ ul.semester_list{
 }
 
 ul{
+    list-style: none;
     margin:0;
     padding:0;
 }
@@ -92,12 +93,26 @@ h1 {
 
 div.cta_container{
     width: auto;
-    height:auto;   
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+    background-color: #ffb7ac;
 }
 
-.cta_body{
-    width:50%;
+
+div.cta_body{
+    width:60%;
     height:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img.cta_symbol{
+    width:20%;
+    height:20%;
 }
 
 /*---------------------semester section------------------------*/
