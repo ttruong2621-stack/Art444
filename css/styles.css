@@ -29,7 +29,7 @@ header{
     width:100%;
     height:auto;
     background-color: #ffbf91;
-    padding: 40px;
+    padding: 40px 0px 40px 0px;
 }
 
 /*coloring the link and no underline*/
@@ -52,7 +52,7 @@ section {
     width: 100%;
     height:auto;
     background-color: #ff8731;
-    padding: 40px;
+    padding: 40px 0px 40px 0px;
 }
 
 ul{
@@ -68,7 +68,7 @@ h1 {
 .cta_section{
     width: 100%;
     height: auto;
-    padding: 40px;
+    padding: 40px 0px 40px 0px;
 }
 
 .cta_container{
@@ -85,7 +85,7 @@ h1 {
 section.semester{
     width: 100%;
     height: auto;
-    padding:40px;
+    padding: 40px 0px 40px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,14 +117,14 @@ footer {
     width: 100%;
     background-color: #ffbf91;
     color: #000000;
-    padding: 10px;
+    padding: 40px 0px 40px 0px;
 }
 
 /*---------------------About me Section------------------------*/
 
 section.about_body{
     width:100%;
-    padding: 20px;
+    padding: 40px 0px 40px 0px;
     height: auto;
     background-color: #fff1e2;
 
@@ -134,7 +134,12 @@ section.about_body{
 section.faqs_section{
     width: 100%;
     height: auto;
-    padding: 40px;
+    padding: 40px 0px 40px 0px;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+}
+
+div.faqs_questions{
+    background-color: #ffbf91;
 }
