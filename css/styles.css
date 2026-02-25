@@ -10,6 +10,7 @@ html {
 body {
     margin: 0;
 	padding: 0;
+    height:auto;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -43,7 +44,7 @@ section {
 }
 
 #semester_container{
-    width:100%;
+    width: 100%;
     height:auto;
     background-color: #ff8731;
     padding: 40px;
@@ -61,7 +62,7 @@ h1 {
 .cta_section{
     width: 100%;
     height: auto;
-    padding: 10 20 10 20;
+    padding: 40px;
 }
 
 .cta_container{
@@ -70,7 +71,7 @@ h1 {
 }
 
 .cta_body{
-    width:auto;
+    width:50%;
     height:auto;
 }
 
@@ -85,7 +86,8 @@ section.semester{
 }
 
 .semester_article{
-    width: auto;
+    max-width: 60%;
+    width: 60%;
     height:auto;
 }
 
@@ -95,7 +97,6 @@ section.semester{
 }
 
 section .gallery {
-    width: 100%;
     height: auto;
     padding: 40px;
 }
