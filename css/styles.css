@@ -32,6 +32,11 @@ header{
     padding: 40px 0px 40px 0px;
 }
 
+div.page_container{
+    display: flex;
+    justify-content: space-between;
+}
+
 /*coloring the link and no underline*/
 a{
     color:#0e0d0d;
