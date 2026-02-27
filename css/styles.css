@@ -221,6 +221,10 @@ div.page_navg{
     justify-content: space-around;
     align-items: center;
 }
+
+div.logo_copyright{
+    display: flex;
+}
 /*---------------------About me Section------------------------*/
 
 section.about_body{
