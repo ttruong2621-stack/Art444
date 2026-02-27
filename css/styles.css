@@ -153,23 +153,21 @@ div.gallery {
     width: 260px;
     height: 310px;
 }
-
-div.semester_body:nth-child(odd){
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-/*switching color for each semester section */
-.semester:nth-child(even) {
+section.semester:nth-child(even){
     background-color: #fff1e2;
 }
-
-div.semester_body:nth-child(even){
-    flex-direction: row-reverse;
+div.odd{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height:auto;
+}
+
+div.even{
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: space-between;
+    height:auto;
 }
 /*---------------------footer section------------------------*/
 footer {
