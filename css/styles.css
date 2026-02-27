@@ -133,20 +133,20 @@ section.semester{
 }
 
 .semester_article{
-    max-width: 80%;
     width: auto;
     height:auto;
 }
 
 .semester_texts{
-    width: 80%;
     height: auto;
-    min-width: 400px;
+    max-width: 400px;
 }
 
 div.gallery {
     height: auto;
     width: auto;
+    display: flex;
+    flex-direction: column;
 
 }
 .semester_image{
@@ -159,14 +159,16 @@ section.semester:nth-child(even){
 div.odd{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap:20px;
     height:auto;
 }
 
 div.even{
     flex-direction: row-reverse;
     display: flex;
-    justify-content: space-between;
+    gap:20px;
+    justify-content: space-evenly;
     height:auto;
 }
 /*---------------------footer section------------------------*/
