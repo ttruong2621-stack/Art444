@@ -56,10 +56,6 @@ section {
     padding: 60px 20px;
 }
 
-/*switching color for each semester section */
-.semester:nth-child(even) {
-    background-color: #fff1e2;
-}
 /*---------------------semester link section------------------------*/
 #semester_container{
     width: 100%;
@@ -137,26 +133,44 @@ section.semester{
 }
 
 .semester_article{
-    max-width: 60%;
-    width: 60%;
+    max-width: 80%;
+    width: 80%;
     height:auto;
 }
 
 .semester_texts{
-    width: auto;
+    width: 80%;
     height: auto;
+    min-width: 400px;
 }
 
-section .gallery {
+div.gallery {
     height: auto;
-    padding: 40px;
+    width: auto;
+    max-width: 30%;
 }
 .semester_image{
     width: 260px;
     height: 310px;
 }
 
+div.semester_body:nth-child(odd){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+/*switching color for each semester section */
+.semester:nth-child(even) {
+    background-color: #fff1e2;
+}
+
+div.semester_body:nth-child(even){
+    flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 /*---------------------footer section------------------------*/
 footer {
     width: 100%;
@@ -165,6 +179,48 @@ footer {
     padding: 40px 0px 40px 0px;
 }
 
+nav.footer_navg{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px 0px 40px;
+}
+
+div.footer_link{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width:auto;
+    height: auto;
+}
+
+div.social_media{
+    height:auto;
+    width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+div.social_media_images{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+div.social_media_texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+}
+
+div.page_navg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 /*---------------------About me Section------------------------*/
 
 section.about_body{
@@ -179,10 +235,18 @@ section.about_body{
 section.faqs_section{
     width: 100%;
     height: auto;
-    padding: 40px 0px 40px 0px;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 0px 40px 0px;
+}
+
+div.faqs_section_body{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    flex-direction: column;
 }
 
 div.faqs_questions{
