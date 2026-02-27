@@ -104,11 +104,15 @@ div.cta_container{
 
 
 div.cta_body{
-    width:60%;
+    width:80%;
     height:auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+p.cta_body_text{
+    width: 50%;
 }
 
 h1.cta_title{
@@ -116,10 +120,10 @@ h1.cta_title{
 }
 
 img.cta_symbol{
-    width:30%;
-    min-width: 150px;
-    min-height: 150px;
-    height:30%;
+    min-width: 10%;
+    min-height: 10%;
+    max-width:  30%;
+    max-height: 30%;
 }
 
 /*---------------------semester section------------------------*/
