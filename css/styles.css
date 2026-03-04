@@ -132,7 +132,8 @@ section.semester{
 
 .semester_texts{
     height: auto;
-    max-width: 400px;
+    min-width: 400px;
+    max-width: 50%;
 }
 
 div.gallery {
@@ -145,6 +146,7 @@ div.gallery {
 .semester_image{
     width: 260px;
     height: 310px;
+    object-fit: cover;
 }
 section.semester:nth-child(even){
     background-color: #fff1e2;
@@ -164,6 +166,13 @@ div.even{
     justify-content: space-evenly;
     height:auto;
 }
+
+div.gallery{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
 /*---------------------footer section------------------------*/
 footer {
     width: 100%;
@@ -244,11 +253,19 @@ section.faqs_section{
     padding: 40px 0px 40px 0px;
 }
 
+div.faqs_body{
+    width: 50%;
+}
+
 div.faqs_section_body{
     display: flex;
     justify-content: space-evenly;
     gap: 40px;
     flex-direction: column;
+}
+
+div.faqs_textbody{
+    padding: 10px;
 }
 
 div.faqs_questions{
