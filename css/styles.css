@@ -25,6 +25,11 @@ header{
     padding: 40px 0px 40px 0px;
 }
 
+img.logo{
+    width: 100px;
+    height: 100px;
+}
+
 div.page_container{
     padding: 0px 40px 0 40px;
     display: flex;
