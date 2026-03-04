@@ -19,4 +19,9 @@
         display: none;
     }
 
+    /*call to action section*/
+    div.cta_body{
+        flex-direction: column;
+    }
+
 }

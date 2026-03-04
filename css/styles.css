@@ -113,6 +113,7 @@ div.cta_body{
 
 p.cta_body_text{
     width: 50%;
+    min-width: 300px;
 }
 
 h1.cta_title{
