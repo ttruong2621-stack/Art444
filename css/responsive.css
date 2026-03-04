@@ -9,5 +9,14 @@
     h1{
         font-size: 2em;
     }
-  
+    /*semester link section*/
+
+    img.menu_button{
+        display: block;
+    }
+
+    li{
+        display: none;
+    }
+
 }
