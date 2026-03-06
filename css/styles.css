@@ -101,7 +101,7 @@ div.cta_container{
     justify-content: center;
     align-items: center;
     flex-direction: column;   
-    
+    padding: 0px 40px 0px 40px;
 }
 
 
@@ -114,8 +114,8 @@ div.cta_body{
 }
 
 p.cta_body_text{
-    width: 50%;
-    min-width: 400px;
+    width: auto;
+    height: auto;
 }
 
 h1.cta_title{
