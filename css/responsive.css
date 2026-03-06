@@ -21,6 +21,8 @@
 
     img.menu_button{
         display: block;
+        width: 20px;
+        height: 20px;
     }
 
     li{
