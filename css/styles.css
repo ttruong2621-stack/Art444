@@ -59,7 +59,7 @@ section {
     width: 100%;
     height:auto;
     background-color: #ff8731;
-    padding: 40px 0px 40px 0px;
+    padding: 10px 0px 10px 0px;
 }
 
 img.menu_button{
@@ -71,21 +71,19 @@ img.menu_button{
 ul.semester_list{
     display:flex;
     justify-content: space-around;
-    padding: 0px 40px 0px 40px;
 }
-
 ul{
     list-style: none;
     margin:0;
     padding:none;
 }
 
-div.semester_navg_container{
-    padding: 40px;
-}
-
 h1 {
     font-size: 3em;
+}
+
+div.semester_navg_container{
+    padding: 0px 10px 0px 10px;
 }
 
 /*---------------------call to action section------------------------*/
