@@ -200,6 +200,16 @@ footer {
     padding: 40px 0px 40px 0px;
 }
 
+div.logo_copyright{
+    position: relative;
+}
+
+small.copyright_symbol{
+    position:absolute;
+    right: 0;
+}
+
+
 nav.footer_navg{
     display: flex;
     justify-content: space-between;
