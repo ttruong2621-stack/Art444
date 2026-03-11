@@ -144,6 +144,7 @@ section.semester{
 .semester_texts{
     height: auto;
     width: auto;
+    max-width: 50%;
 }
 
 div.gallery {
@@ -217,23 +218,25 @@ div.social_media{
     height:auto;
     width: auto;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-div.social_media_images{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-}
-
-div.social_media_texts{
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: auto;
-    height: auto;
+    gap: 30px;
+}
+
+div.social_media_facebook{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap:10px;
+    align-items: center;
+}
+
+div.social_media_instagram{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap:10px;
+    align-items: center;
 }
 
 div.page_navg{
@@ -246,7 +249,14 @@ div.page_navg{
 div.logo_copyright{
     display: flex;
 }
+
+
+
 /*---------------------About me Section------------------------*/
+
+h1.aboutme_title{
+    margin: 0px;
+}
 
 section.about_body{
     width:100%;
@@ -260,24 +270,22 @@ section.about_body{
 
 div.aboutme_container{
     width: 80%;
-    min-width: 300px;
+    min-width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+
 }
 
 div.about_body_container{
-    width: 80%;
+    width: 70%;
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-h1.aboutme_title{
-    text-align: center;
+    justify-content: flex-start;
+    gap:0px;
 }
 
 /*---------------------FAQs Section------------------------*/
@@ -293,7 +301,7 @@ section.faqs_section{
 
 div.faqs_body{
     width: 50%;
-    min-width: 300px;
+    height: auto;
 }
 
 div.faqs_section_body{

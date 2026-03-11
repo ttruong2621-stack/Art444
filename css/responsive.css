@@ -30,11 +30,17 @@
         display: none;
     }
 
+    div.semester_texts{
+        max-width: 80%;    
+    }
+
     /*call to action section*/
     div.cta_body{
         flex-direction: column;
     }
-
+    div.cta_container{
+        flex-direction: column;
+    }
 
     /*semester section*/
     div.semester_body{
@@ -49,5 +55,29 @@
 
     div.gallery{
         width:100%;
+    }
+    /*footer section*/
+    nav.footer_navg{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*about me section*/
+    div.aboutme_container{
+        width: auto;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*faqs section*/
+    div.faqs_section{
+        justify-content: space-evenly;
+        align-items: normal;
+    }
+    
+    div.faqs_body{
+        width: 80%;
     }
 }
