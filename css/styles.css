@@ -261,7 +261,25 @@ section.about_body{
 div.aboutme_container{
     width: 80%;
     min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
+div.about_body_container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1.aboutme_title{
+    text-align: center;
+}
+
 /*---------------------FAQs Section------------------------*/
 section.faqs_section{
     width: 100%;
