@@ -18,6 +18,10 @@
         width: 50px;
         height: 50px;
     }
+
+    p{
+        font-size: 12px;
+    }
     /*semester link section*/
 
     img.menu_button{
