@@ -137,6 +137,13 @@ section.semester{
     align-items: center;
 }
 
+div.semester_body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
 .semester_article{
     width: 80%;
     height:auto;
