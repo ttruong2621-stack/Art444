@@ -86,11 +86,6 @@
     }
 
     /*faqs section*/
-    div.faqs_section{
-        justify-content: space-evenly;
-        align-items: normal;
-    }
-    
     div.faqs_body{
         width: 80%;
     }
