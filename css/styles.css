@@ -251,6 +251,7 @@ div.page_navg{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    gap:20px;
 }
 
 div.logo_copyright{

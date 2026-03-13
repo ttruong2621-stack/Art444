@@ -43,6 +43,7 @@
     /*call to action section*/
     div.cta_body{
         flex-direction: column;
+        width: 80%;
     }
     div.cta_container{
         flex-direction: column;
@@ -74,10 +75,14 @@
 
     /*about me section*/
     div.aboutme_container{
-        width: auto;
+        width: 100%;
 
         flex-direction: column;
         align-items: center;
+    }
+
+    div.about_body_container{
+        width: 80%;
     }
 
     /*faqs section*/
