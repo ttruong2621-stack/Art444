@@ -34,10 +34,6 @@
         display: none;
     }
 
-    div.semester_texts{
-        max-width: 80%;    
-    }
-
     /*call to action section*/
     div.cta_body{
         flex-direction: column;
@@ -57,9 +53,11 @@
         gap: 20px;
     }
 
-    div.gallery{
+    img.semester_image{
         width:100%;
     }
+
+
     /*footer section*/
     nav.footer_navg{
         flex-direction: column;

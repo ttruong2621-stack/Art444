@@ -137,12 +137,6 @@ section.semester{
     align-items: center;
 }
 
-div.semester_body{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
 
 .semester_article{
     width: 80%;
@@ -151,19 +145,20 @@ div.semester_body{
 
 .semester_texts{
     height: auto;
-    width: auto;
-    max-width: 50%;
+    width: 100%;
 }
 
 div.gallery {
     height: auto;
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
-
+    justify-content: space-evenly;
+    gap:10px;
 }
+
 .semester_image{
-    width: auto;
+    width: 100%;
     height: 310px;
     object-fit: cover;
 }
@@ -176,7 +171,7 @@ div.odd{
     justify-content: space-evenly;
     gap:20px;
     height:auto;
-    width: auto;
+    width: 100%;
 }
 
 div.even{
@@ -185,14 +180,7 @@ div.even{
     gap:20px;
     justify-content: space-evenly;
     height:auto;
-    width: auto;
-}
-
-div.gallery{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
-    width: 50%;
+    width: 100%;
 }
 
 article{
