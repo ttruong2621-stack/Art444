@@ -343,7 +343,7 @@ div.bar{
     height:5px;
     background-color: var(--primary-text-color);
     margin: 6px 0;
-    display: block;
+    transition: 0.4s;
 }
 
 /*CSS to adding for chaning the bar to X when click*/
@@ -353,4 +353,22 @@ div.menu_button{
     display:inline-block;
     /*make cursor change to pointer when hover over the menu button*/
     cursor: pointer;
+}
+
+/*.change is the name of the css will be apply to the menu button*/
+/*in this way when we apply the style to a tag, it will target specifc 
+.line1 to apply the css rule*/
+.change .line1{
+    /*rotate the first bar*/
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .line2{
+    /*Fade out second bar*/
+    opacity: 0;
+}
+
+.change .line3{
+    /*rotate the third bar*/
+    transform: translate(0, -11px) rotate(45deg);
 }
