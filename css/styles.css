@@ -69,15 +69,18 @@ a{
     padding: 10px 0px 10px 0px;
 }
 
-img.menu_button{
-    width: 50px;
-    height: 50px;
-    display: none;
+div.menu_button{
+    width: 35px;
+    height:35px;
+    background-color: var(--primary-text-color);
+    margin: 6px 0;
+    display: block;
 }
 
 ul.semester_list{
     display:flex;
     justify-content: space-around;
+    display: none;
 }
 ul{
     list-style: none;
