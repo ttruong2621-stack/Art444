@@ -69,14 +69,6 @@ a{
     padding: 10px 0px 10px 0px;
 }
 
-div.bar{
-    width: 35px;
-    height:5px;
-    background-color: var(--primary-text-color);
-    margin: 6px 0;
-    display: block;
-}
-
 ul.semester_list{
     display:flex;
     justify-content: space-around;
@@ -342,4 +334,23 @@ div.faqs_textbody{
 
 div.faqs_questions{
     background-color: var(--primary-color);
+}
+
+/*---------------------Menu Button------------------------*/
+div.bar{
+    /*css to style three bar*/
+    width: 35px;
+    height:5px;
+    background-color: var(--primary-text-color);
+    margin: 6px 0;
+    display: block;
+}
+
+/*CSS to adding for chaning the bar to X when click*/
+div.menu_button{
+    /*inline-block to make the menu button only take up the space it needs 
+    and not the whole width of the container*/
+    display:inline-block;
+    /*make cursor change to pointer when hover over the menu button*/
+    cursor: pointer;
 }
