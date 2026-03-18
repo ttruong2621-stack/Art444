@@ -36,7 +36,7 @@
   <!--Semester navigation-->
   <nav id="semester_container" class="semester_navg">
     <div class="semester_navg_container">
-      <div class="menu_button">
+      <div class="menu_button" onclick="toggleMenu()">
           <div class="bar line1"></div>
           <div class="bar line2"></div>
           <div class="bar line3"></div>
@@ -322,5 +322,15 @@
 
   <script src="js/script.js"></script>
 </body>
+
+<script>
+  const menuButton = document.querySelector('.menu_button').classList;
+
+  function toggleMenu() {
+    menuButton.toggle('change');
+
+  }
+</script>
+
 
 </html>
