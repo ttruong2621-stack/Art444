@@ -2,7 +2,17 @@
 /*add inter as font-family*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/*variable for colors*/
+:root{
+    --primary-color: #ffbf91;
+    --secondary-color: #ff8731;
+    --tertiary-color: #ffb7ac;
 
+    --section-color:#fff1e2;
+
+    --primary-text-color: #0e0d0d;
+
+}
 /*Hey this is for the cards that show off information*/
 body {
     margin: 0;
@@ -21,7 +31,7 @@ body {
 header{
     width:100%;
     height:auto;
-    background-color: #ffbf91;
+    background-color: var(--primary-color);
     padding: 40px 0px 40px 0px;
 }
 
@@ -46,7 +56,7 @@ div.header_link{
 
 /*coloring the link and no underline*/
 a{
-    color:#0e0d0d;
+    color:var(--primary-text-color);
     text-decoration: none;
 }
 
@@ -55,7 +65,7 @@ a{
 #semester_container{
     width: 100%;
     height:auto;
-    background-color: #ff8731;
+    background-color: var(--secondary-color);
     padding: 10px 0px 10px 0px;
 }
 
@@ -87,7 +97,7 @@ div.semester_navg_container{
 .cta_section{
     width: 100%;
     height: auto;
-    background-color: #ffb7ac;
+    background-color: var(--tertiary-color);
     padding: 40px 0px 40px 0px;
 }
 
@@ -164,7 +174,7 @@ div.gallery {
     object-fit: cover;
 }
 section.semester:nth-child(even){
-    background-color: #fff1e2;
+    background-color: var(--section-color);
 }
 div.odd{
     display: flex;
@@ -192,8 +202,8 @@ article{
 /*---------------------footer section------------------------*/
 footer {
     width: 100%;
-    background-color: #ffbf91;
-    color: #000000;
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
     padding: 40px 0px 40px 0px;
 }
 
@@ -270,7 +280,7 @@ section.about_body{
     width:100%;
     padding: 40px 0px 40px 0px;
     height: auto;
-    background-color: #fff1e2;
+    background-color: var(--section-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,5 +338,5 @@ div.faqs_textbody{
 }
 
 div.faqs_questions{
-    background-color: #ffbf91;
+    background-color: var(--primary-color);
 }
