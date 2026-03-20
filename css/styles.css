@@ -70,8 +70,8 @@ a{
 }
 
 ul.semester_list{
-    /*display:flex;
-    justify-content: space-around;*/
+    display:flex;
+    justify-content: space-around;
     display: none;
 }
 ul{
@@ -356,7 +356,7 @@ div.menu_button{
 }
 
 /*CSS to reviewing the semester selector*/
-.semester_vertical{
+.semester_list.semester_vertical{
     display: block;
     
 }
