@@ -70,8 +70,8 @@ a{
 }
 
 ul.semester_list{
-    display:flex;
-    justify-content: space-around;
+    /*display:flex;
+    justify-content: space-around;*/
     display: none;
 }
 ul{
@@ -355,6 +355,16 @@ div.menu_button{
     cursor: pointer;
 }
 
+/*CSS to reviewing the semester selector*/
+.semester_vertical{
+    display: block;
+    
+}
+
+
+/*---------------------Animation------------------------*/
+
+/*Menu button animation*/
 /*.change is the name of the css will be apply to the menu button*/
 /*in this way when we apply the style to a tag, it will target specifc 
 .line1 to apply the css rule*/
@@ -372,3 +382,4 @@ div.menu_button{
     /*rotate the third bar*/
     transform: translate(0, -11px) rotate(45deg);
 }
+
