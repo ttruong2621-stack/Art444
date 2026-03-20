@@ -67,12 +67,15 @@ a{
     height:auto;
     background-color: var(--secondary-color);
     padding: 10px 0px 10px 0px;
+    position: sticky;
+    top: 0;
 }
 
 ul.semester_list{
     display:flex;
     justify-content: space-around;
     display: none;
+
 }
 ul{
     list-style: none;
@@ -357,8 +360,11 @@ div.menu_button{
 
 /*CSS to reviewing the semester selector*/
 .semester_list.semester_vertical{
-    display: block;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 10px 0px 10px 0px;
 }
 
 
