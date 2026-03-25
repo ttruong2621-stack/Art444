@@ -34,16 +34,19 @@
     }
     /*semester link section*/
 
-    img.menu_button{
-        display: block;
-        width: 40px;
-        height: 40px;
+    div.menu_button{
+        /*inline-block to make the menu button only take up the space it needs 
+        and not the whole width of the container*/
+        display: inline-block !important;
+
+        /*make cursor change to pointer when hover over the menu button*/
+         cursor: pointer;
+
     }
 
-    li{
+    ul.semester_list{
         display: none;
     }
-
     /*call to action section*/
     div.cta_body{
         flex-direction: column;
