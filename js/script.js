@@ -1,16 +1,16 @@
 // ALL YOU JS GOES HERE
 
 //Menu button to open and close the semester selector
-const menuButton = document.querySelector('.menu_button').classList;
-const semester = document.querySelector('.semester_list').classList;
+const menuButton = document.querySelector('.menu_button');
+const semester = document.querySelector('.semester_list');
 
 function toggleSemester() {
-    semester.toggle('show');
+    semester.classList.toggle('show');
     console.log('semester show up');
 }
 
 function toggleMenu() {
-    menuButton.toggle('change'); 
+    menuButton.classList.toggle('change'); 
     console.log('menubutton clicked');
     toggleSemester();
 }
@@ -19,8 +19,8 @@ function toggleMenu() {
 const semesterList = document.querySelectorAll('.semesterlink');
 
 function closeSemester() {
-    semester.remove('show');
-    menuButton.remove('change');
+    semester.classList.remove('show');
+    menuButton.classList.remove('change');
     console.log('semester closed');
 }
 
