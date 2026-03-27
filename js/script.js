@@ -5,7 +5,7 @@ const menuButton = document.querySelector('.menu_button').classList;
 const semester = document.querySelector('.semester_list').classList;
 
 function toggleSemester() {
-    semester.toggle('semester_vertical');
+    semester.toggle('show');
     console.log('semester show up');
 }
 
@@ -19,7 +19,7 @@ function toggleMenu() {
 const semesterList = document.querySelectorAll('.semesterlink');
 
 function closeSemester() {
-    semester.remove('semester_vertical');
+    semester.remove('show');
     menuButton.remove('change');
     console.log('semester closed');
 }

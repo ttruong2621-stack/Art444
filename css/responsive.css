@@ -44,9 +44,15 @@
 
     }
 
-    ul.semester_list{
-        display: none;
+    .semester_list{
+        opacity: 0;
+        height: 0px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transition: 0.8s;
     }
+
     /*call to action section*/
     div.cta_body{
         flex-direction: column;

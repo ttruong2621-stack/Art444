@@ -354,14 +354,16 @@ div.menu_button{
 }
 
 /*CSS to reviewing the semester selector*/
-.semester_list.semester_vertical{
+.semester_list.show{
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: space-between;
     padding: 10px 0px 10px 0px;
+    opacity: 1;
+    height: 200px;
+    transition: 0.8s;
 }
-
 
 /*---------------------Animation------------------------*/
 
@@ -383,4 +385,3 @@ div.menu_button{
     /*rotate the third bar*/
     transform: translate(0, -11px) rotate(45deg);
 }
-
