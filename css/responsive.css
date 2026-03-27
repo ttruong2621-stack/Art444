@@ -9,6 +9,29 @@
     }
 }
 
+@media only screen and (max-width: 560px) {
+    /*semester link section*/
+
+    div.menu_button{
+        /*inline-block to make the menu button only take up the space it needs 
+        and not the whole width of the container*/
+        display: inline-block !important;
+
+        /*make cursor change to pointer when hover over the menu button*/
+         cursor: pointer;
+
+    }
+
+    .semester_list{
+        opacity: 0;
+        height: 0px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transition: 0.8s;
+    }
+
+}
 
 /* MOBILE VIEW */
 @media only screen and (max-width: 478px) {
@@ -31,26 +54,6 @@
 
     p{
         font-size: 12px;
-    }
-    /*semester link section*/
-
-    div.menu_button{
-        /*inline-block to make the menu button only take up the space it needs 
-        and not the whole width of the container*/
-        display: inline-block !important;
-
-        /*make cursor change to pointer when hover over the menu button*/
-         cursor: pointer;
-
-    }
-
-    .semester_list{
-        opacity: 0;
-        height: 0px;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        transition: 0.8s;
     }
 
     /*call to action section*/
