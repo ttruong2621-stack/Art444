@@ -57,6 +57,27 @@ const setPrimaryTextColor = (color) => {
     document.documentElement.style.setProperty('--primary-text-color', color);
 };
 
+//symbol color changer
+const setSymbolColor = (color) => {
+    document.documentElement.style.setProperty('--symbol-color', color);
+};
+
+//variable for light and dark mode toggle
+let PrimaryColorDark;
+let SecondaryColorDark;
+let TertiaryColorDark;
+let SectionColorDark;
+let PrimaryTextColorDark;
+let SymbolColorDark;
+
+
+let PrimaryColorLight;
+let SecondaryColorLight;
+let TertiaryColorLight;
+let SectionColorLight;
+let PrimaryTextColorLight;
+let SymbolColorLight;
+
 
 //Light and dark mode toggle
 function lightDarkMode() {
@@ -65,5 +86,6 @@ function lightDarkMode() {
     setTertiaryColor();
     setSectionColor();
     setPrimaryTextColor();
+    setSymbolColor();
     console.log('dark background set');
 }
