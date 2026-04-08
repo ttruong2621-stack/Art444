@@ -12,6 +12,8 @@
 
     --primary-text-color: #0e0d0d;
 
+    --symbol-color: #ff6b00;
+
 }
 /*Hey this is for the cards that show off information*/
 body {
@@ -35,9 +37,11 @@ header{
     padding: 40px 0px 40px 0px;
 }
 
-img.logo{
+.logo{
     width: 100px;
     height: 100px;
+    fill: var(--symbol-color);
+    stroke: var(--symbol-color);
 }
 
 div.page_container{
@@ -127,11 +131,13 @@ h1.cta_title{
     margin: 0;
 }
 
-img.cta_symbol{
+.cta_symbol{
     max-width:  20%;
     max-height: 20%;
     min-width: 100px;
     min-height: 100px;
+    fill: var(--symbol-color);
+    stroke: var(--symbol-color);
 }
 
 /*---------------------semester section------------------------*/
@@ -219,6 +225,13 @@ nav.footer_navg{
     padding: 0px 10px 0px 10px;
 }
 
+.footer_logo{
+    width: 100px;
+    height: 100px;
+    fill: var(--symbol-color);
+    stroke: var(--symbol-color);
+}
+
 div.footer_link{
     display: flex;
     justify-content: space-between;
@@ -244,12 +257,26 @@ div.social_media_facebook{
     align-items: center;
 }
 
+.facebook_symbol{
+    width: 40px;
+    height: 40px;
+    fill: var(--symbol-color);
+    stroke: var(--symbol-color);
+}
+
 div.social_media_instagram{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     gap:10px;
     align-items: center;
+}
+
+.instagram_symbol{
+    width: 40px;
+    height: 40px;
+    fill: var(--symbol-color);
+    stroke: var(--symbol-color);
 }
 
 div.page_navg{
@@ -386,4 +413,3 @@ div.menu_button{
 }
 
 /*---------------------Color selection------------------------*/
-
