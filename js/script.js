@@ -63,13 +63,12 @@ const setSymbolColor = (color) => {
 };
 
 //variable for light and dark mode toggle
-let PrimaryColorDark;
+let PrimaryColorDark = "#000000";
 let SecondaryColorDark;
-let TertiaryColorDark;
+let TertiaryColorDark = "#403d3d";
 let SectionColorDark;
-let PrimaryTextColorDark;
-let SymbolColorDark;
-
+let PrimaryTextColorDark = "#fca538";
+let SymbolColorDark = "#fca538";
 
 let PrimaryColorLight;
 let SecondaryColorLight;
@@ -81,11 +80,11 @@ let SymbolColorLight;
 
 //Light and dark mode toggle
 function lightDarkMode() {
-    setPrimaryColor();
+    setPrimaryColor(PrimaryColorDark);
     setSecondaryColor();
-    setTertiaryColor();
+    setTertiaryColor(TertiaryColorDark);
     setSectionColor();
-    setPrimaryTextColor();
-    setSymbolColor();
+    setPrimaryTextColor(PrimaryTextColorDark);
+    setSymbolColor(SymbolColorDark);
     console.log('dark background set');
 }
