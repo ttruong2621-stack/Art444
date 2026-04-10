@@ -8,7 +8,8 @@
     --secondary-color: #ff8731;
     --tertiary-color: #ffb7ac;
 
-    --section-color:#fff1e2;
+    --section-color-even:#fff1e2;
+    --section-color-odd:#f0f0f0;
 
     --primary-text-color: #0e0d0d;
 
@@ -26,6 +27,7 @@ body {
 	vertical-align: baseline;
     font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
     background-color: #f2f2f2;
+    color: var(--primary-text-color);
 }
 
 
@@ -176,7 +178,11 @@ div.gallery {
     object-fit: cover;
 }
 section.semester:nth-child(even){
-    background-color: var(--section-color);
+    background-color: var(--section-color-even);
+}
+
+section.semester:nth-child(odd){
+    background-color: var(--section-color-odd);
 }
 div.odd{
     display: flex;
@@ -303,7 +309,6 @@ section.about_body{
     width:100%;
     padding: 40px 0px 40px 0px;
     height: auto;
-    background-color: var(--section-color);
     display: flex;
     justify-content: center;
     align-items: center;

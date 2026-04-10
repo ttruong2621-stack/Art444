@@ -48,8 +48,12 @@ const setTertiaryColor = (color) => {
 };
 
 //Section color changer
-const setSectionColor = (color) => {
-    document.documentElement.style.setProperty('--section-color', color);
+const setSectionColorEven = (color) => {
+    document.documentElement.style.setProperty('--section-color-even', color);
+};
+
+const setSectionColorOdd = (color) => {
+    document.documentElement.style.setProperty('--section-color-odd', color);
 };
 
 //Primary text color changer
@@ -62,29 +66,49 @@ const setSymbolColor = (color) => {
     document.documentElement.style.setProperty('--symbol-color', color);
 };
 
-//variable for light and dark mode toggle
-let PrimaryColorDark = "#000000";
-let SecondaryColorDark;
-let TertiaryColorDark = "#403d3d";
-let SectionColorDark;
-let PrimaryTextColorDark = "#fca538";
-let SymbolColorDark = "#fca538";
+let isDarkMode = false;
 
-let PrimaryColorLight;
-let SecondaryColorLight;
-let TertiaryColorLight;
-let SectionColorLight;
-let PrimaryTextColorLight;
-let SymbolColorLight;
+//variable for light and dark mode toggle
+let PrimaryColorDark = "#473536";
+let SecondaryColorDark = "#0a0708";
+let TertiaryColorDark = "#747c71";
+let SectionColorDarkEven = "#473536";
+let SectionColorDarkOdd = "#0a0708";
+let PrimaryTextColorDark = "#f0f0f0";
+let SymbolColorDark = "#d2d2c8";
+
+let PrimaryColorLight = "#ffbf91";
+let SecondaryColorLight = "#ff8731";
+let TertiaryColorLight = "#ffb7ac";
+let SectionColorLightEven = "#ffbf91";
+let SectionColorLightOdd = "#f0f0f0";
+let PrimaryTextColorLight = "#0e0d0d";
+let SymbolColorLight = "#ff6b00";
 
 
 //Light and dark mode toggle
 function lightDarkMode() {
-    setPrimaryColor(PrimaryColorDark);
-    setSecondaryColor();
-    setTertiaryColor(TertiaryColorDark);
-    setSectionColor();
-    setPrimaryTextColor(PrimaryTextColorDark);
-    setSymbolColor(SymbolColorDark);
-    console.log('dark background set');
+    if(!isDarkMode){
+        setPrimaryColor(PrimaryColorDark);
+        setSecondaryColor(SecondaryColorDark);
+        setTertiaryColor(TertiaryColorDark);
+        setSectionColorEven(SectionColorDarkEven);
+        setSectionColorOdd(SectionColorDarkOdd);
+        setPrimaryTextColor(PrimaryTextColorDark);
+        setSymbolColor(SymbolColorDark);
+        console.log('dark background set');
+        isDarkMode = true;
+    }
+        
+    else{
+        setPrimaryColor(PrimaryColorLight);
+        setSecondaryColor(SecondaryColorLight);
+        setTertiaryColor(TertiaryColorLight);
+        setSectionColorEven(SectionColorLightEven);
+        setSectionColorOdd(SectionColorLightOdd);
+        setPrimaryTextColor(PrimaryTextColorLight);
+        setSymbolColor(SymbolColorLight);
+        isDarkMode = false;
+        console.log('light background set');
+    } 
 }
