@@ -112,3 +112,5 @@ function lightDarkMode() {
         console.log('light background set');
     } 
 }
+
+//Javascript to show and hide light and dark mode button

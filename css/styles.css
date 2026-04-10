@@ -312,6 +312,7 @@ section.about_body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--tertiary-color);
 }
 
 div.aboutme_container{
@@ -343,6 +344,7 @@ section.faqs_section{
     justify-content: center;
     align-items: center;
     padding: 40px 0px 40px 0px;
+    background-color: var(--secondary-color);
 }
 
 div.faqs_body{
