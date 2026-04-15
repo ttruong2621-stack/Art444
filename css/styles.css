@@ -90,6 +90,13 @@ a{
     display: none;
 }
 
+.linkcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
 /*---------------------semester link section------------------------*/
 #semester_container{
     width: 100%;
