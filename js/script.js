@@ -133,3 +133,19 @@ if (currentHour.getHours() >= 18){
       
         
 }
+
+//scroll event for the light/dark mode button
+
+const ScrollPos= window.scrollY;
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY > ScrollPos){
+        dayToNightButton.classList.add('buttonfixed');
+        nightToDayButton.classList.add('buttonfixed');
+    }
+    else{
+        dayToNightButton.classList.remove('buttonfixed');
+        nightToDayButton.classList.remove('buttonfixed');
+    }
+});
+

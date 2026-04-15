@@ -72,11 +72,12 @@ a{
     fill: var(--symbol-color);
     stroke: var(--symbol-color);
     display: none;
-}
+} 
 
 .dayshow{
     display: block;
 }
+
 
 .night_to_day{
     width: 40px;
@@ -84,6 +85,7 @@ a{
     fill: var(--symbol-color);
     stroke: var(--symbol-color);
     display: block;
+ 
 }
 
 .nighthide{
@@ -96,6 +98,12 @@ a{
     justify-content: space-between;
     gap: 20px;
     align-items: center;
+}
+
+.buttonfixed{
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
 }
 /*---------------------semester link section------------------------*/
 #semester_container{
