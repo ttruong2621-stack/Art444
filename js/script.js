@@ -122,3 +122,14 @@ function toggleSunMoon(){
     nightToDayButton.classList.toggle('nighthide');
     console.log('sun and moon toggled');
 }
+
+//change light/dark mode according to time
+const currentHour = new Date();
+
+if (currentHour.getHours() >= 18){
+    toggleSunMoon();
+    lightDarkMode();  
+    console.log('time change');
+      
+        
+}
