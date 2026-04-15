@@ -114,3 +114,11 @@ function lightDarkMode() {
 }
 
 //Javascript to show and hide light and dark mode button
+const dayToNightButton = document.querySelector('.day_to_night');
+const nightToDayButton = document.querySelector('.night_to_day');
+
+function toggleSunMoon(){
+    dayToNightButton.classList.toggle('dayshow');
+    nightToDayButton.classList.toggle('nighthide');
+    console.log('sun and moon toggled');
+}

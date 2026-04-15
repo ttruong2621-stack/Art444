@@ -66,6 +66,29 @@ a{
     text-decoration: none;
 }
 
+.day_to_night{
+    width: 40px;
+    height: 40px;
+    fill: var(--symbol-color);
+    stroke: var(--symbol-color);
+    display: none;
+}
+
+.dayshow{
+    display: block;
+}
+
+.nighthide{
+    display: none;
+}
+.night_to_day{
+    width: 40px;
+    height: 40px;
+    fill: var(--symbol-color);
+    stroke: var(--symbol-color);
+    display: block;
+}
+
 /*---------------------semester link section------------------------*/
 #semester_container{
     width: 100%;
