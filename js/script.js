@@ -136,9 +136,12 @@ if (currentHour.getHours() >= 18){
 
 //scroll event for the light/dark mode button
 
-const ScrollPos= window.scrollY;
+//recording current scroll position, but divide by 2 to make the button appear after scrolling half of the screen height
+const ScrollPos= window.scrollY / 2;
 
 window.addEventListener('scroll', () => {
+
+
     if(window.scrollY > ScrollPos){
         dayToNightButton.classList.add('buttonfixed');
         nightToDayButton.classList.add('buttonfixed');
