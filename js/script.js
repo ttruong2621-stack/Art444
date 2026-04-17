@@ -80,7 +80,7 @@ let SymbolColorDark = "#d2d2c8";
 let PrimaryColorLight = "#ffbf91";
 let SecondaryColorLight = "#ff8731";
 let TertiaryColorLight = "#ffb7ac";
-let SectionColorLightEven = "#ffbf91";
+let SectionColorLightEven = "#fff1e2";
 let SectionColorLightOdd = "#f0f0f0";
 let PrimaryTextColorLight = "#0e0d0d";
 let SymbolColorLight = "#ff6b00";
@@ -126,7 +126,7 @@ function toggleSunMoon(){
 //change light/dark mode according to time
 const currentHour = new Date();
 
-if (currentHour.getHours() >= 18){
+if (currentHour.getHours() >= 18 || currentHour.getHours() < 6) {
     toggleSunMoon();
     lightDarkMode();  
     console.log('time change');
