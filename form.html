@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/responsive.css">
     <body>
-        <section>
-            <div class="FormContainer">
+        <section class="form_section">
+            <div class="form_container">
                 <h1>Contact Me!</h1>
                 <form>
                     <div class="first_name_input"style="display:flex; flex-direction: column;">
@@ -32,17 +32,20 @@
                         <label for="phone">Phone Numbers</label>
                         <input id="phone" name="phone" type="tel" placeholder="(xxx) xxx-xxxx" required maxlength="10"/>
                     </div>
-                    <div>
+                    <br>
+                    <div class="choices_question">
                         <span>What will you said to yourself 10 years ago?</span>
-                        <selection>
-                            <input type="checkbox" value="choice-1">I want to travel back to the past.</input>
-                            <input type="checkbox" value="choice-2">I want to grow and embrace my past.</input>
-                            <input type="checkbox" value="choice-3">I want to embrace the future.</input>
-                        </selection>
-                        <input type="button" value="SUBMIT YOUR INFO!"/>
+                        <br>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> I want to travel back to the past.</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> I want to grow and embrace my past.</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> I want to embrace the future.</label><br><br>
                     </div>
-                </form>
+                    <input type="button" value="SUBMIT YOUR INFO!"/>
             </div>
+            
         </section>
 
     </body>

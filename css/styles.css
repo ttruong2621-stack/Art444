@@ -458,4 +458,27 @@ div.menu_button{
     transform: translate(0, -11px) rotate(45deg);
 }
 
-/*---------------------Color selection------------------------*/
+/*---------------------Contact Form------------------------*/
+
+.form_section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.form_container{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.choice_input{
+    display:block;
+}
