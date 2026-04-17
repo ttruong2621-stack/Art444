@@ -14,46 +14,30 @@
                 <h1>Contact Me!</h1>
                 <form>
                     <div style="display:flex; flex-direction: column;">
-                        <label for="full-name">Full Name</label>
-                        <input id="full-name" name="full-name" type="text" placeholder="ei Tuong Truong" required/>
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" name="first-name" type="text" placeholder="ei Tuong Truong" required/>
                     </div>
                     <br>
                     <div style="display:flex; flex-direction: column;">
-                        <label for="email">Email</label>
+                        <label for="last-name">Last Name</label>
+                        <input id="last-name" name="last-name" type="text" placeholder="ei Truong" required/>
+                    </div>
+                    <br>
+                    <div style="display:flex; flex-direction: column;">
+                        <label for="email">Email Address</label>
                         <input id="email" name="email" type="email" placeholder="EMAIL" required/>
                     </div>
                     <br>
                     <div style="display:flex; flex-direction: column;">
-                        <label for="phone">Phone</label>
+                        <label for="phone">Phone Numbers</label>
                         <input id="phone" name="phone" type="phone" placeholder="Phone Numbers" required maxlength="10"/>
                     </div>
-                    <br>
-                    <div style="display:flex; flex-direction: column;">
-                        <label for="resume">Resume</label>
-                        <input id="resume" name="resume" type="file"required/>
-                    </div>
-                    <br>
-                    <div style="display:flex; flex-direction: column;">
-                        <label for="color">What is your favorite color</label>
-                        <input id="color" name="color" type="color" required/>
-                    </div>
-                    <br>
-                    <div style="display:flex; flex-direction: column;">
-                        <label for="date">What is your birthday</label>
-                        <input id="date" name="date" type="date" required/>
-                    </div>
                     <div>
-                        <span>What do you think happens when we die?</span>
-                        <label><input type="radio" value="choice-1">Heck if I know?</label>
-                        <label><input type="radio" value="choice-2">I know for sure</label>
-                        <label><input type="radio" value="choice-3">How morbic!</label>
-                    </div>
-                    <div>
-                        <span>What do you think happens when we die?</span>
+                        <span>What will you said to yourself 10 years ago?</span>
                         <selection>
-                            <option value="choice-1"><input type="radio" value="choice-1">Heck if I know?</option>
-                            <option value="choice-2"><input type="radio" value="choice-2">I know for sure</option>
-                            <option value="choice-3"><input type="radio" value="choice-3">How morbic!</option>
+                            <input type="checkbox" value="choice-1">I want to travel back to the past.</input>
+                            <input type="checkbox" value="choice-2">I want to grow and embrace my past.</input>
+                            <input type="checkbox" value="choice-3">I want to embrace the future.</input>
                         </selection>
                         <input type="button" value="SUBMIT YOUR INFO!"/>
                     </div>
