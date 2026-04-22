@@ -15,6 +15,10 @@
 
     --symbol-color: #ff6b00;
 
+    /* Transition & Box Shadow */
+    --transition: 0.4s ease-in-out; 
+    --shadow: 0px 60px 56px -12px rgba(9, 40, 163, 0.05); 
+
 }
 /*Hey this is for the cards that show off information*/
 body {
@@ -408,6 +412,61 @@ div.faqs_textbody{
 
 div.faqs_questions{
     background-color: var(--primary-color);
+}
+
+.accordion__wrapper {
+    background-color: var(--secondary-color);
+    box-shadow: var(--shadow);
+    border-radius: 2.5rem;
+    width: 100%;
+    max-width: 60rem;
+    padding: 5rem;
+}
+
+.accordion__title{
+    color: var(--primary-text-color);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.accordion {
+    border-bottom: 0.1rem solid var(--primary-text-color);
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+.accordion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+} 
+
+.accordion__icon {
+    background-color: var(--color-primary);
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--secondary-color);
+    flex-shrink: 0;
+}
+
+.accordion__question{
+    color: var(--primary-text-color);
+}
+
+.accordion__answer{
+    padding: 2rem 0;
+}
+
+.accordion__content{
+    overflow: hidden;
+    height: 0;
+    transition: var(--transition);
 }
 
 /*---------------------Menu Button------------------------*/
