@@ -391,14 +391,13 @@ section.faqs_section{
 }
 
 div.faqs_body{
-    width: 50%;
+    width: 80%;
     height: auto;
 }
 
 div.faqs_section_body{
     display: flex;
     justify-content: space-evenly;
-    gap: 40px;
     flex-direction: column;
 }
 
@@ -411,16 +410,7 @@ div.faqs_textbody{
 }
 
 div.faqs_questions{
-    background-color: var(--primary-color);
-}
-
-.accordion__wrapper {
     background-color: var(--secondary-color);
-    box-shadow: var(--shadow);
-    border-radius: 2.5rem;
-    width: 100%;
-    max-width: 60rem;
-    padding: 5rem;
 }
 
 .accordion__title{
@@ -444,14 +434,14 @@ div.faqs_questions{
 } 
 
 .accordion__icon {
-    background-color: var(--color-primary);
+    background-color: var(--tertiary-color);
     width: 2.2rem;
     height: 2.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
     flex-shrink: 0;
 }
 
