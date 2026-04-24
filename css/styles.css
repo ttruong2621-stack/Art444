@@ -399,6 +399,7 @@ div.faqs_section_body{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    gap: 20px;
 }
 
 summary{
@@ -406,11 +407,11 @@ summary{
 }
 
 div.faqs_textbody{
-    padding: 10px;
+    padding: 5px;
 }
 
 div.faqs_questions{
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .accordion__title{
@@ -421,8 +422,8 @@ div.faqs_questions{
 
 .accordion {
     border-bottom: 0.1rem solid var(--primary-text-color);
-    padding-bottom: 2rem;
-    margin-bottom: 3rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .accordion__header {
@@ -449,13 +450,13 @@ div.faqs_questions{
     color: var(--primary-text-color);
 }
 
-.accordion__answer{
-    padding: 2rem 0;
+p.accordion__answer{
+    padding: 0;
 }
 
 .accordion__content{
     overflow: hidden;
-    height: 0;
+    height: auto;
     transition: var(--transition);
 }
 
