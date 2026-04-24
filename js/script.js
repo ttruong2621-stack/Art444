@@ -153,16 +153,6 @@ window.addEventListener('scroll', () => {
 });
 
 //Gist FAQ section
-
- accordions.forEach((a, i) => {
-      const c = a.querySelector(".accordion__content");
-      const ic = a.querySelector("#accordion-icon");
-
-      c.style.height = i === index && !isOpen ? `${c.scrollHeight}px` : "0px";
-      ic.classList.toggle("ri-add-line", i !== index || !isOpen);
-      ic.classList.toggle("ri-subtract-fill", i === index && !isOpen);
-    }
-
 const accordions = document.querySelectorAll(".accordion");
 
 accordions.forEach((accordion, index) => {

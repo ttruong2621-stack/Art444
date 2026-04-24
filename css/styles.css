@@ -448,15 +448,16 @@ div.faqs_questions{
 
 .accordion__question{
     color: var(--primary-text-color);
+    padding: 0px 20px 0px 20px;
 }
 
 p.accordion__answer{
-    padding: 0;
+    padding: 0px 20px 0px 20px;
 }
 
 .accordion__content{
     overflow: hidden;
-    height: auto;
+    height: 0;
     transition: var(--transition);
 }
 
