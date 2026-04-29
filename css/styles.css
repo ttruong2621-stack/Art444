@@ -185,6 +185,22 @@ h1.cta_title{
     stroke: var(--symbol-color);
 }
 
+.flair {
+  position: fixed;
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.flair img {
+  height: 100%;
+  position: absolute;
+}
+
+
 /*---------------------semester section------------------------*/
 section.semester{
     width: 100%;
@@ -387,7 +403,7 @@ section.faqs_section{
     justify-content: center;
     align-items: center;
     padding: 40px 0px 40px 0px;
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
 }
 
 div.faqs_body{

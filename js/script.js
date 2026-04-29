@@ -173,3 +173,62 @@ accordions.forEach((accordion, index) => {
     });
   });
 });
+
+//Call to action animation
+gsap.registerPlugin(CustomEase, CustomWiggle);
+
+CustomWiggle.create("wiggle", { wiggles: 8, type: "anticipate" });
+gsap.to(".cta_symbol", {
+  duration: 2,
+  transformOrigin: "center center",
+  rotation: 8,
+  x: 8,
+  y: 8,
+  scale: 0.7,
+  ease: "wiggle"
+});
+
+gsap.set(".flair", {
+  opacity: 1
+});
+
+let images = document.querySelectorAll(".flair img");
+
+const distance = 350;
+const angleSpread = Math.PI * 2;
+
+let tl = gsap.timeline({delay: 0.86});
+
+tl.from(".flair img", {
+  scale: 0
+});
+
+images.forEach((img) => {
+  const angle = Math.random() * angleSpread;
+  const speed = gsap.utils.mapRange(0, 500, 0.3, 1.5, distance);
+  const velocity = gsap.utils.random(500, 1000) * speed;
+
+  tl.to(
+    img,
+    {
+      physics2D: {
+        angle: angle * (180 / Math.PI),
+        velocity: velocity,
+        gravity: 800
+      },
+      rotation: gsap.utils.random(-180, 180),
+      duration:10
+    },
+    0
+  ).to(
+    img,
+    {
+      opacity: 0,
+      scale: "random(0.6, 1)",
+      duration: 0.2,
+      ease: "power1.out",
+      onComplete: () => img.remove()
+    },
+    4
+  );
+});
