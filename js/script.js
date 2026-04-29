@@ -10,7 +10,7 @@ function toggleSemester() {
 }
 
 function toggleMenu() {
-    menuButton.classList.toggle('change'); 
+    menuButton.classList.toggle('change');
     console.log('menubutton clicked');
     toggleSemester();
 }
@@ -88,7 +88,7 @@ let SymbolColorLight = "#ff6b00";
 
 //Light and dark mode toggle
 function lightDarkMode() {
-    if(!isDarkMode){
+    if (!isDarkMode) {
         setPrimaryColor(PrimaryColorDark);
         setSecondaryColor(SecondaryColorDark);
         setTertiaryColor(TertiaryColorDark);
@@ -99,8 +99,8 @@ function lightDarkMode() {
         console.log('dark background set');
         isDarkMode = true;
     }
-        
-    else{
+
+    else {
         setPrimaryColor(PrimaryColorLight);
         setSecondaryColor(SecondaryColorLight);
         setTertiaryColor(TertiaryColorLight);
@@ -110,14 +110,14 @@ function lightDarkMode() {
         setSymbolColor(SymbolColorLight);
         isDarkMode = false;
         console.log('light background set');
-    } 
+    }
 }
 
 //Javascript to show and hide light and dark mode button
 const dayToNightButton = document.querySelector('.day_to_night');
 const nightToDayButton = document.querySelector('.night_to_day');
 
-function toggleSunMoon(){
+function toggleSunMoon() {
     dayToNightButton.classList.toggle('dayshow');
     nightToDayButton.classList.toggle('nighthide');
     console.log('sun and moon toggled');
@@ -128,25 +128,25 @@ const currentHour = new Date();
 
 if (currentHour.getHours() >= 18 || currentHour.getHours() < 6) {
     toggleSunMoon();
-    lightDarkMode();  
+    lightDarkMode();
     console.log('time change');
-      
-        
+
+
 }
 
 //scroll event for the light/dark mode button
 
 //recording current scroll position, but divide by 2 to make the button appear after scrolling half of the screen height
-const ScrollPos= window.scrollY / 2;
+const ScrollPos = window.scrollY / 2;
 
 window.addEventListener('scroll', () => {
 
 
-    if(window.scrollY > ScrollPos){
+    if (window.scrollY > ScrollPos) {
         dayToNightButton.classList.add('buttonfixed');
         nightToDayButton.classList.add('buttonfixed');
     }
-    else{
+    else {
         dayToNightButton.classList.remove('buttonfixed');
         nightToDayButton.classList.remove('buttonfixed');
     }
@@ -156,83 +156,99 @@ window.addEventListener('scroll', () => {
 const accordions = document.querySelectorAll(".accordion");
 
 accordions.forEach((accordion, index) => {
-  const header = accordion.querySelector(".accordion__header");
-  const content = accordion.querySelector(".accordion__content");
-  const icon = accordion.querySelector("#accordion-icon");
+    const header = accordion.querySelector(".accordion__header");
+    const content = accordion.querySelector(".accordion__content");
+    const icon = accordion.querySelector("#accordion-icon");
 
-  header.addEventListener("click", () => {
-    const isOpen = content.style.height === `${content.scrollHeight}px`;
+    header.addEventListener("click", () => {
+        const isOpen = content.style.height === `${content.scrollHeight}px`;
 
-    accordions.forEach((a, i) => {
-      const c = a.querySelector(".accordion__content");
-      const ic = a.querySelector("#accordion-icon");
+        accordions.forEach((a, i) => {
+            const c = a.querySelector(".accordion__content");
+            const ic = a.querySelector("#accordion-icon");
 
-      c.style.height = i === index && !isOpen ? `${c.scrollHeight}px` : "0px";
-      ic.classList.toggle("ri-add-line", i !== index || !isOpen);
-      ic.classList.toggle("ri-subtract-fill", i === index && !isOpen);
+            c.style.height = i === index && !isOpen ? `${c.scrollHeight}px` : "0px";
+            ic.classList.toggle("ri-add-line", i !== index || !isOpen);
+            ic.classList.toggle("ri-subtract-fill", i === index && !isOpen);
+        });
     });
-  });
 });
 
-function boom(){
-    //Call to action animation
+//Call to action animation
 gsap.registerPlugin(CustomEase, CustomWiggle);
 
 CustomWiggle.create("wiggle", { wiggles: 8, type: "anticipate" });
-gsap.to(".cta_symbol", {
-  duration: 2,
-  transformOrigin: "center center",
-  rotation: 8,
-  x: 8,
-  y: 8,
-  scale: 0.7,
-  ease: "wiggle"
-});
 
-gsap.set(".flair", {
-  opacity: 1
-});
+function boom() {
 
-let images = document.querySelectorAll(".flair img");
+    gsap.fromTo(".cta_symbol", {
+        rotation: 0,
+        x: 0,
+        y: 0,
+        scale: 1,
+    },{
+        duration: 2,
+        transformOrigin: "center center",
+        rotation: 8,
+        x: 8,
+        y: 8,
+        scale: 0.7,
+        ease: "wiggle",
 
-const distance = 350;
-const angleSpread = Math.PI * 2;
+        onComplete: () => {
+            gsap.set(".cta_symbol",{
+                rotation: 0,
+                x: 0,
+                y: 0,
+                scale: 1 });
+        }
+    }
+);
 
-let tl = gsap.timeline({delay: 0.86});
+    gsap.set(".flair", {
+        opacity: 1
+    });
 
-tl.from(".flair img", {
-  scale: 0
-});
+    let images = document.querySelectorAll(".flair img");
 
-images.forEach((img) => {
-  const angle = Math.random() * angleSpread;
-  const speed = gsap.utils.mapRange(0, 500, 0.3, 1.5, distance);
-  const velocity = gsap.utils.random(500, 1000) * speed;
+    const distance = 350;
+    const angleSpread = Math.PI * 2;
 
-  tl.to(
-    img,
-    {
-      physics2D: {
-        angle: angle * (180 / Math.PI),
-        velocity: velocity,
-        gravity: 800
-      },
-      rotation: gsap.utils.random(-180, 180),
-      duration:10
-    },
-    0
-  ).to(
-    img,
-    {
-      opacity: 0,
-      scale: "random(0.6, 1)",
-      duration: 0.2,
-      ease: "power1.out",
-      onComplete: () => img.remove()
-    },
-    4
-  );
-});
+    let tl = gsap.timeline({ delay: 0.86 });
+
+    tl.from(".flair img", {
+        scale: 0
+    });
+
+    images.forEach((img) => {
+        const angle = Math.random() * angleSpread;
+        const speed = gsap.utils.mapRange(0, 500, 0.3, 1.5, distance);
+        const velocity = gsap.utils.random(500, 1000) * speed;
+
+        tl.to(
+            img,
+            {
+                physics2D: {
+                    angle: angle * (180 / Math.PI),
+                    velocity: velocity,
+                    gravity: 800
+                },
+                rotation: gsap.utils.random(-180, 180),
+                duration: 10
+            },
+            0
+        ).to(
+            img,
+            {
+                opacity: 0,
+                scale: "random(0.6, 1)",
+                duration: 0.2,
+                ease: "power1.out",
+                onComplete: () => img.remove()
+            },
+            4
+        );
+    });
 
 }
 
