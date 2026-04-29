@@ -174,7 +174,8 @@ accordions.forEach((accordion, index) => {
   });
 });
 
-//Call to action animation
+function boom(){
+    //Call to action animation
 gsap.registerPlugin(CustomEase, CustomWiggle);
 
 CustomWiggle.create("wiggle", { wiggles: 8, type: "anticipate" });
@@ -232,3 +233,6 @@ images.forEach((img) => {
     4
   );
 });
+
+}
+
