@@ -553,3 +553,28 @@ div.menu_button{
 .choice_input{
     display:block;
 }
+
+/* Form body */
+.form_section{
+    background-color: var(--tertiary-color);
+    padding: 20px 0px 20px 0px;
+}
+
+.form_container{
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    border-radius: 30px;
+    padding: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.input-container {
+    width: 100%;
+    height: auto;
+
+}
