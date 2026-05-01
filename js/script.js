@@ -222,10 +222,10 @@ function boom() {
   gsap.fromTo(
     symbol,
     {
-      rotation: 0,
-      x: 0,
-      y: 0,
-      scale: 1
+      rotation: 8,
+      x: 8,
+      y: 8,
+      scale: 1.5
     },
     {
       duration: 1.5,
