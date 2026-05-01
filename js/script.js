@@ -174,81 +174,126 @@ accordions.forEach((accordion, index) => {
     });
 });
 
-//Call to action animation
-gsap.registerPlugin(CustomEase, CustomWiggle);
-
+gsap.registerPlugin(CustomEase, CustomWiggle, Physics2DPlugin);
 CustomWiggle.create("wiggle", { wiggles: 8, type: "anticipate" });
 
-function boom() {
+const symbol = document.querySelector(".cta_symbol");
+const images = document.querySelectorAll(".flair img");
 
-    gsap.fromTo(".cta_symbol", {
+function expand(){
+    gsap.killTweensOf(symbol);
+    gsap.to(symbol, {
+    duration: 0.3,
+    rotation: 8,
+    x: 8,
+    y: 8,
+    scale: 1.5,
+    transformOrigin: "center center",
+    ease: "power2.out"
+  });
+}
+
+function collapse(){
+    gsap.killTweensOf(symbol);
+
+    // reset symbol
+    gsap.set(symbol, {
+        duration: 0.3,
         rotation: 0,
         x: 0,
         y: 0,
         scale: 1,
-    },{
-        duration: 2,
         transformOrigin: "center center",
-        rotation: 8,
-        x: 8,
-        y: 8,
-        scale: 0.7,
-        ease: "wiggle",
-
-        onComplete: () => {
-            gsap.set(".cta_symbol",{
-                rotation: 0,
-                x: 0,
-                y: 0,
-                scale: 1 });
-        }
-    }
-);
-
-    gsap.set(".flair", {
-        opacity: 1
+        ease: "power2.out"
     });
-
-    let images = document.querySelectorAll(".flair img");
-
-    const distance = 350;
-    const angleSpread = Math.PI * 2;
-
-    let tl = gsap.timeline({ delay: 0.86 });
-
-    tl.from(".flair img", {
-        scale: 0
-    });
-
-    images.forEach((img) => {
-        const angle = Math.random() * angleSpread;
-        const speed = gsap.utils.mapRange(0, 500, 0.3, 1.5, distance);
-        const velocity = gsap.utils.random(500, 1000) * speed;
-
-        tl.to(
-            img,
-            {
-                physics2D: {
-                    angle: angle * (180 / Math.PI),
-                    velocity: velocity,
-                    gravity: 800
-                },
-                rotation: gsap.utils.random(-180, 180),
-                duration: 10
-            },
-            0
-        ).to(
-            img,
-            {
-                opacity: 0,
-                scale: "random(0.6, 1)",
-                duration: 0.2,
-                ease: "power1.out",
-                onComplete: () => img.remove()
-            },
-            4
-        );
-    });
-
 }
 
+function boom() {
+  
+  const angleSpread = Math.PI * 2;
+  const distance = 350;
+
+  // stop previous animations
+  gsap.killTweensOf(images);
+  gsap.killTweensOf(symbol);
+
+
+    // pop + wiggle, then return to hover state or normal state
+  gsap.fromTo(
+    symbol,
+    {
+      rotation: 0,
+      x: 0,
+      y: 0,
+      scale: 1
+    },
+    {
+      duration: 1.5,
+      rotation: 8,
+      x: 8,
+      y: 8,
+      scale: 0.7,
+      transformOrigin: "center center",
+      ease: "wiggle",
+      onComplete: () => {
+        if (symbol.matches(":hover")) {
+          expand();
+        } else {
+          collapse();
+        }
+      }
+    }
+  );
+
+  gsap.set(".flair", { opacity: 1 });
+
+  images.forEach((img) => {
+    // reset each particle to a clean starting point
+    gsap.set(img, {
+      x: 0,
+      y: 0,
+      opacity: 1,
+      scale: 0,
+      rotation: 0
+    });
+
+    const angle = Math.random() * angleSpread;
+    const speed = gsap.utils.mapRange(0, 500, 0.3, 1.5, distance);
+    const velocity = gsap.utils.random(500, 1000) * speed;
+
+    gsap.timeline()
+      .to(img, {
+        scale: 1,
+        duration: 0.15
+      })
+      .to(img, {
+        physics2D: {
+          angle: angle * 180 / Math.PI,
+          velocity: velocity,
+          gravity: 800
+        },
+        rotation: gsap.utils.random(-180, 180),
+        duration: 1.5
+      }, 0)
+      .to(img, {
+        opacity: 0,
+        scale: gsap.utils.random(0.6, 1),
+        duration: 0.25,
+        ease: "power1.out",
+        onComplete: () => {
+          gsap.set(img, {
+            x: 0,
+            y: 0,
+            opacity: 1,
+            scale: 0,
+            rotation: 0
+          });
+        }
+      }, 1.1);
+  });
+  
+}
+
+symbol.addEventListener("mouseenter", expand);
+symbol.addEventListener("mouseleave", collapse);
+symbol.addEventListener("click", boom);
