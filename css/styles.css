@@ -573,3 +573,18 @@ div.menu_button{
 .typing{
     transition-duration: 0.5s;
 }
+
+.submit:hover{
+    transform:scale(1.1);
+    background-color:var(--secondary-color);
+    border-radius:15px;
+}
+
+.submit{
+    padding: 10px;
+    outline:transparent;
+    border-color:transparent;
+    background-color:var(--tertiary-color);
+    color:var(--primary);
+    transition-duration: 0.5s;
+}
