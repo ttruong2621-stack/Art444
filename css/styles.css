@@ -537,44 +537,30 @@ div.menu_button{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    padding: 20px;
+    background-color: var(--tertiary-color);
 }
 
 .form_container{
-    width: 50%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-}
-
-.choice_input{
-    display:block;
-}
-
-/* Form body */
-.form_section{
-    background-color: var(--tertiary-color);
-    padding: 20px 0px 20px 0px;
-}
-
-.form_container{
     background-color: var(--primary-color);
     color: var(--primary-text-color);
     border-radius: 30px;
     padding: 20px;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
 }
 
 .input-container {
     width: 100%;
     height: auto;
 
+}
+
+.contact_title{
+    margin: 0;
 }
