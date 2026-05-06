@@ -564,3 +564,12 @@ div.menu_button{
 .contact_title{
     margin: 0;
 }
+
+.typing:focus{
+    background-color:var(--tertiary-color);
+    transform:scale(1.1) translate(0, 0.5rem);
+}
+
+.typing{
+    transition-duration: 0.5s;
+}
